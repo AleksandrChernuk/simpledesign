@@ -1,5 +1,8 @@
+import React, { Component } from "react";
+import DenseAppBar from "./AppBar/DenseAppBar";
+
 function App() {
-  return <></>;
+  return <DenseAppBar />;
 }
 
 export default App;
