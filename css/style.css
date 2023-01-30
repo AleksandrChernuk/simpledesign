@@ -15,8 +15,44 @@ body {
   box-sizing: border-box;
 }
 
+.accordion-btn {
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  background: #fafafa;
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #262626;
+}
+
+.accordion-btn::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 49px;
+  height: 49px;
+  background-image: url(../images/plus-circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.accordion-btn::before:hover {
+  rotate: 90db;
+}
+
+accordion-btn:hover,
+accordion-btn:focus {
+  opacity: 0.5;
+  color: var(--primery-color);
+}
+
 .button {
   font-family: inherit;
+  text-decoration: none;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2;
@@ -28,6 +64,27 @@ body {
   color: var(--primery-text-color);
   cursor: pointer;
   transition: all linear;
+}
+
+.button-select {
+  display: inline-flex;
+  border: none;
+  border-radius: 100px;
+  padding: 19px 39px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  align-items: center;
+  color: #bd7048;
+}
+.button-select::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 21px;
+  height: 23px;
+  background-image: url(../images/card.svg);
+  background-size: contain;
 }
 
 button:hover,
@@ -132,4 +189,142 @@ button:focus {
   font-size: 15px;
   line-height: 1.2;
   color: rgba(38, 38, 38, 0.7);
+}
+
+.howitsworks-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #262626;
+}
+
+.howitsworks-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(38, 38, 38, 1);
+}
+.howitsworks-after-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: rgba(38, 38, 38, 0.7);
+}
+
+.services-pre-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  color: #262626;
+}
+
+.services-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #262626;
+}
+
+.services-after-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(38, 38, 38, 0.7);
+}
+
+.services-after-title > span {
+  color: #262626;
+}
+.services-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.services-items {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #262626;
+}
+.examples-link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #bd7048;
+}
+
+.checklist-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #262626;
+}
+
+.checklist-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: rgba(38, 38, 38, 0.7);
+}
+
+.design-desc {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #262626;
+}
+.design-items-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #353535;
+}
+
+.test {
+  background-image: url(../images/section-test-jpg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.test-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.test-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.privacy-policy {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: rgba(33, 33, 33, 0.5);
+}
+
+.copi {
+  width: 100vw;
+  height: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #ffffff;
 }

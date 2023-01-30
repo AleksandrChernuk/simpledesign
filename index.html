@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/main.scss" />
+
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,8 +36,8 @@
       </div>
     </header>
 
-    <main>
-      <section class="herow constainer">
+    <main class="constainer">
+      <section class="herow">
         <h1 class="herow-title">Дизайн-проект для вашей квартиры за 2 недели и 20 000 тыс грн</h1>
         <button type="button" class="button">Консультация</button>
         <ul class="herow-list list">
@@ -54,152 +56,192 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Как это работает?</h2>
-        <ul>
-          <li>
-            <p>Выбор состава проекта</p>
-            <p>Выберите состав вашего проекта: только планировка или дизайн-проект</p>
+      <section class="howitsworks">
+        <h2 class="howitsworks-title">Как это работает?</h2>
+        <ul class="howitsworks-list list">
+          <li class="howitsworks-items">
+            <p class="howitsworks-text">Выбор состава проекта</p>
+            <p class="howitsworks-after-text">Выберите состав вашего проекта: только планировка или дизайн-проект</p>
           </li>
-          <li>
-            <p>Настройка проекта</p>
-            <p>
+          <li class="howitsworks-items">
+            <p class="howitsworks-text">Настройка проекта</p>
+            <p class="howitsworks-after-text">
               Отметьте в корзине нужен ли вам профессиональный замер, подбор строительной бригады или точный просчет
               сметы
             </p>
           </li>
-          <li>
-            <p>Создание чертежей</p>
-            <p>Наши дизайнеры спроектируют интерьер, подготовят чертежи.</p>
+          <li class="howitsworks-items">
+            <p class="howitsworks-text">Создание чертежей</p>
+            <p class="howitsworks-after-text">Наши дизайнеры спроектируют интерьер, подготовят чертежи.</p>
           </li>
         </ul>
-        <img src="./images/section2-jpg-big.jpg" alt="вид комнаты" width="631" height="626" loading="lazy" />
+        <img
+          class="howitsworks-img"
+          src="./images/section2-jpg-big.jpg"
+          alt="вид комнаты"
+          width="631"
+          height="626"
+          loading="lazy"
+        />
       </section>
 
-      <section>
-        <h2>Наши услуги</h2>
-        <h3>Планировка за 10 000 uah</h3>
-        <p>Срок выполнения: <span>5 дней</span></p>
-        <p>
+      <section class="services">
+        <p class="services-pre-title">Наши услуги</p>
+        <h2 class="services-title">Планировка за 10 000 uah</h2>
+        <p class="services-after-title">Срок выполнения: <span>5 дней</span></p>
+        <p class="services-text">
           Мы разработаем для вас уникальное планировочное решение квартиры, которое будет соответствовать как нормам
           эргономики, так и вашим личным пожеланиям, а также подготовим чертеж для согласования планировки.
         </p>
-        <ul>
-          <li>2 варианта планировки + финальный</li>
-          <li>обмерный план</li>
-          <li>план демонтажа стен</li>
-          <li>план монтажа перегородок</li>
+        <ul class="services-list">
+          <li class="services-items">2 варианта планировки + финальный</li>
+          <li class="services-items">обмерный план</li>
+          <li class="services-items">план демонтажа стен</li>
+          <li class="services-items">план монтажа перегородок</li>
         </ul>
-        <button type="button">Оставить заявку</button>
-        <a href="#"><img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" />Посмотреть пример</a>
-        <img src="./images/plan-jpeg-01.jpg" alt="план квартиры" width="521" height="376" />
+        <button type="button" class="button">Оставить заявку</button>
 
+        <div class="examples">
+          <img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" class="examples-img" />
+          <a class="examples-link" href="#">Посмотреть пример</a>
+        </div>
         <img src="./images/plan-jpeg-02.jpg" alt="план розеток в квартире" />
-        <h3>Дизайн-проект за 10 000 uah</h3>
-        <p>Срок выполнения: <span>14 дней</span></p>
-        <p>
+        <h2 class="services-title">Дизайн-проект за 10 000 uah</h2>
+        <p class="services-after-title">Срок выполнения: <span>14 дней</span></p>
+        <p class="services-text">
           Разработаем планировочное решение вашей квартиры, далее на его основе мы подготовим альбом, состоящий из 12
           чертежей, необходимых строителям для ремонта.
         </p>
-        <ul>
-          <li>2 варианта планировки + финальный</li>
-          <li>планы демонтажа и монтажа стен</li>
-          <li>розетки, выключатели, освещение</li>
-          <li>сантехника</li>
-          <li>план потолка</li>
-          <li>план пола и плинтусов</li>
-          <li>план дверей</li>
+        <ul class="services-list">
+          <li class="services-items">2 варианта планировки + финальный</li>
+          <li class="services-items">планы демонтажа и монтажа стен</li>
+          <li class="services-items">розетки, выключатели, освещение</li>
+          <li class="services-items">сантехника</li>
+          <li class="services-items">план потолка</li>
+          <li class="services-items">план пола и плинтусов</li>
+          <li class="services-items">план дверей</li>
         </ul>
+        <div class="examples">
+          <img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" class="examples-img" />
+          <a class="examples-link" href="#">Посмотреть пример</a>
+        </div>
 
-        <button type="button">Оставить заявку</button>
-        <a href="#"><img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" />Посмотреть пример</a>
+        <button type="button" class="button">Оставить заявку</button>
       </section>
 
-      <section>
-        <img src="./images/todolist.svg" alt="лист выполненых заданий" width="379" height="369" />
-        <h2>Планируете ремонт?</h2>
-        <p>Ответьте на несколько вопросов и получите бесплатный чек-лист по ремонту</p>
-        <button type="button">Получить чек-лист</button>
+      <section class="checklist">
+        <img src="./images/todolist.svg" alt="лист выполненых заданий" width="379" height="369" class="checklist-img" />
+        <h2 class="checklist-title">Планируете ремонт?</h2>
+        <p class="checklist-text">Ответьте на несколько вопросов и получите бесплатный чек-лист по ремонту</p>
+        <button type="button" class="button">Получить чек-лист</button>
       </section>
 
-      <section>
-        <h2>Дизайн комнат</h2>
-        <p>
+      <section class="design">
+        <h2 class="design-title">Дизайн комнат</h2>
+        <p class="design-text">
           Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в интерьере, названиями, артикулами,
           цветом стен и так далее.
         </p>
 
-        <p>Гостиные</p>
-        <ul>
-          <li>
-            <img src="./images/aqarel-jpeg.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Акварель</p>
-            <button type="button">Выбрать</button>
+        <p class="design-desc">Гостиные</p>
+        <ul class="design-list list">
+          <li class="design-items">
+            <img class="design-items-img" src="./images/aqarel-jpeg.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Акварель</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
-          <li>
-            <img src="./images/ira-jpeg.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Ира</p>
-            <button type="button">Выбрать</button>
+          <li class="design-items">
+            <img class="design-items-img" src="./images/ira-jpeg.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Ира</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
-          <li>
-            <img src="./images/nurs.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Нурс</p>
-            <button type="button">Выбрать</button>
-          </li>
-        </ul>
-
-        <p>Детские</p>
-        <ul>
-          <li>
-            <img src="./images/blue.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Синяя</p>
-            <button type="button">Выбрать</button>
-          </li>
-          <li>
-            <img src="./images/pinck.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Розовая</p>
-            <button type="button">Выбрать</button>
-          </li>
-          <li>
-            <img src="./images/shine.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Яркая</p>
-            <button type="button">Выбрать</button>
+          <li class="design-items">
+            <img class="design-items-img" src="./images/nurs.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Нурс</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
         </ul>
 
-        <p>Коридоры - прихожие</p>
-        <ul>
-          <li>
-            <img src="./images/corridor-irina-jpg.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Ирина</p>
-            <button type="button">Выбрать</button>
+        <p class="design-desc">Детские</p>
+        <ul class="design-list list">
+          <li class="design-items">
+            <img class="design-items-img" src="./images/blue.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Синяя</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
-          <li>
-            <img src="./images/corridor-aqarel-jpg.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Акварель</p>
-            <button type="button">Выбрать</button>
+          <li class="design-items">
+            <img class="design-items-img" src="./images/pinck.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Розовая</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
-          <li>
-            <img src="./images/corridor-cadur-jpg.jpg" alt="примеры робот" width="363" height="266" />
-            <p>Кадыр</p>
-            <button type="button">Выбрать</button>
+          <li class="design-items">
+            <img class="design-items-img" src="./images/shine.jpg" alt="примеры робот" width="363" height="266" />
+            <p class="design-items-text">Яркая</p>
+            <button type="button" class="button-select">Выбрать</button>
           </li>
         </ul>
 
-        <button type="button">К каталогу комнат</button>
+        <p class="design-desc">Коридоры - прихожие</p>
+        <ul class="design-list list">
+          <li class="design-items">
+            <img
+              class="design-items-img"
+              src="./images/corridor-irina-jpg.jpg"
+              alt="примеры робот"
+              width="363"
+              height="266"
+            />
+            <p class="design-items-text">Ирина</p>
+            <button type="button" class="button-select">Выбрать</button>
+          </li>
+          <li class="design-items">
+            <img
+              class="design-items-img"
+              src="./images/corridor-aqarel-jpg.jpg"
+              alt="примеры робот"
+              width="363"
+              height="266"
+            />
+            <p class="design-items-text">Акварель</p>
+            <button type="button" class="button-select">Выбрать</button>
+          </li>
+          <li class="design-items">
+            <img
+              class="design-items-img"
+              src="./images/corridor-cadur-jpg.jpg"
+              alt="примеры робот"
+              width="363"
+              height="266"
+            />
+            <p class="design-items-text">Кадыр</p>
+            <button type="button" class="button-select">Выбрать</button>
+          </li>
+        </ul>
+
+        <a href="#" class="button">К каталогу комнат</a>
       </section>
 
-      <section>
-        <h2>Давайте определим, что вам нравится</h2>
-        <p>Пройдите короткий тест и мы покажем подходящие вам стилевые решения</p>
-        <button type="button">Пройти тест</button>
+      <section class="test">
+        <h2 class="test-title">Давайте определим, что вам нравится</h2>
+        <p class="test-text">Пройдите короткий тест и мы покажем подходящие вам стилевые решения</p>
+        <button type="button" class="button">Пройти тест</button>
       </section>
 
-      <section>
-        <h2>Часто задаваемые вопросы</h2>
-        <ul>
-          <li>
-            <p>Вопрос</p>
+      <section class="question">
+        <h2 class="question-title">Часто задаваемые вопросы</h2>
+        <ul class="accordion-list list">
+          <li class="accordion-items">
+            <button type="button" class="accordion-btn">Вопрос</button>
+            <p class="accordion-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+              viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
+              cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+              egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+              vulputate aliquam elementum, odio lacus.
+            </p>
+          </li>
+          <li class="accordion-items">
+            <button type="button" class="question-btn">Вопрос</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
               viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
@@ -208,8 +250,8 @@
               vulputate aliquam elementum, odio lacus.
             </p>
           </li>
-          <li>
-            <p>Вопрос</p>
+          <li class="accordion-items">
+            <button type="button" class="question-btn">Вопрос</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
               viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
@@ -218,8 +260,8 @@
               vulputate aliquam elementum, odio lacus.
             </p>
           </li>
-          <li>
-            <p>Вопрос</p>
+          <li class="accordion-items">
+            <button type="button" class="question-btn">Вопрос</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
               viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
@@ -228,18 +270,8 @@
               vulputate aliquam elementum, odio lacus.
             </p>
           </li>
-          <li>
-            <p>Вопрос</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
-              viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
-              cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
-              egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
-              vulputate aliquam elementum, odio lacus.
-            </p>
-          </li>
-          <li>
-            <p>Вопрос</p>
+          <li class="accordion-items">
+            <button type="button" class="question-btn">Вопрос</button>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
               viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui sit
@@ -252,26 +284,31 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="constainer">
       <nav>
-        <a href="#" lang="en">Simple <span>Design</span><br /><span>дизайн интерьера</span></a>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Тест</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">О нас </a></li>
-          <li><a href="#">Цены</a></li>
+        <a href="#" lang="en" class="header-logo"
+          >Simple <span>Design</span><br /><span class="header-logo-small">дизайн интерьера</span></a
+        >
+        <ul class="header-nav-list list">
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Главная</a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Тест</a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">О нас </a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Цены</a></li>
         </ul>
       </nav>
 
-      <a href="#"
+      <a href="#" class="privacy-policy"
         >Политика конфиденциальности <br />
         Условия пользования</a
       >
 
-      <a href="tel:+380441111111">+380441111111</a>
-      <p>с 9:00 до 18:00</p>
-      <p>(с) 2022. Все права защищены.</p>
+      <div flex>
+        <a href="tel:+380441111111" class="header-phope-number">+38044 1111111</a>
+        <p class="header-time">с 9:00 до 18:00</p>
+      </div>
     </footer>
+    <p class="copi">(с) 2022. Все права защищены.</p>
+
+    <script src="./src/script.js"></script>
   </body>
 </html>
