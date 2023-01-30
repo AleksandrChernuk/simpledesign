@@ -1,0 +1,40 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  display: inline-flex;
+  border: none;
+  border-radius: 100px;
+  padding: 25px 45px;
+  background-color: #bd7048;
+  color: white;
+  cursor: pointer;
+  transition: all linear;
+}
+
+button:hover {
+  opacity: 0.5;
+}
