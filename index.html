@@ -4,37 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#" lang="en">Simple <span>Design</span><br /><span>дизайн интерьера</span></a>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Тест</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">О нас </a></li>
-          <li><a href="#">Цены</a></li>
+    <header class="header constainer flex">
+      <nav class="header-nav flex">
+        <a href="#" lang="en" class="header-logo"
+          >Simple <span>Design</span><br /><span class="header-logo-small">дизайн интерьера</span></a
+        >
+        <ul class="header-nav-list list flex">
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Главная</a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Тест</a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Каталог</a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">О нас </a></li>
+          <li class="header-nav-items"><a href="#" class="header-nav-link">Цены</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+380441111111</a>
-      <p>с 9:00 до 18:00</p>
+      <div flex>
+        <a href="tel:+380441111111" class="header-phope-number">+38044 1111111</a>
+        <p class="header-time">с 9:00 до 18:00</p>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Дизайн-проект для вашей квартиры за 2 недели и 20 000 тыс грн</h1>
+      <section class="herow constainer">
+        <h1 class="herow-title">Дизайн-проект для вашей квартиры за 2 недели и 20 000 тыс грн</h1>
         <button type="button" class="button">Консультация</button>
-        <ul>
-          <li>
-            <p><span>2 недели</span> срок выполнения заказа</p>
+        <ul class="herow-list list">
+          <li class="herow-items">
+            <p class="herow-items-text">2 недели</p>
+            <p class="herow-items-desc">срок выполнения заказа</p>
           </li>
-          <li>
-            <p><span>Не важно</span> Сколько квадратов, цена - одна!</p>
+          <li class="herow-items">
+            <p class="herow-items-text">Не важно</p>
+            <p class="herow-items-desc">Сколько квадратов, цена - одна!</p>
           </li>
-          <li><span>Рассрочка</span> до 24 месяцев</li>
+          <li class="herow-items">
+            <p class="herow-items-text">Рассрочка</p>
+            <p class="herow-items-desc">до 24 месяцев</p>
+          </li>
         </ul>
       </section>
 
