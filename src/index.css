@@ -27,7 +27,7 @@ h3 {
   font-family: inherit;
   display: inline-flex;
   align-items: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
   padding: 20px 10px;
   width: 100%;
   background: #fafafa;
@@ -41,24 +41,21 @@ h3 {
 
 .accordion-items {
   position: relative;
-  margin: 10px 20px;
-}
-
-.accordion-items {
+  margin: 0 20px;
 }
 
 .accordion-items.activ .accordion-text {
-  height: auto;
+  display: block;
+  opacity: 1;
 }
+
 .accordion-text {
   overflow: hidden;
   position: relative;
-  height: 0;
-  overflow-y: auto;
-  transition: 0.5ms linear;
-}
-
-.show {
+  padding-top: 14px;
+  padding-bottom: 34px;
+  padding-left: 24px;
+  padding-right: 24px;
   display: none;
 }
 
@@ -66,14 +63,19 @@ h3 {
   content: "";
 
   display: inline-block;
-  margin-right: 12px;
-  vertical-align: middle;
+
   width: 49px;
   height: 49px;
   background-image: url(../src/images/plus-circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* .accordion-items.activ .accordion-btn::before {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../src/images/ant-design_plus-circle-outlined.svg);
+} */
 
 /****************Button*************************/
 
@@ -224,7 +226,7 @@ button:focus {
   padding-top: 164px;
 }
 
-.container .herow-container {
+.container.herow-container {
   text-align: center;
   position: relative;
   text-align: center;
@@ -246,8 +248,8 @@ button:focus {
   justify-content: space-around;
   position: absolute;
   bottom: 0;
-  left: 0;
-  transform: translate(20%, 30%);
+  right: 0;
+  transform: translate(0%, 180%);
 
   background-color: var(--primery-text-color);
 
@@ -384,6 +386,26 @@ button:focus {
 }
 /************Services*************/
 
+.services-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.services-wrapper-content,
+.services-wrapper-img {
+  width: calc(100% / 2);
+}
+
+.services-list {
+  padding: 0;
+  margin-bottom: 94px;
+}
+
 .services-pre-title {
   margin: 0;
   padding: 0;
@@ -396,7 +418,7 @@ button:focus {
 }
 
 .services-title {
-  margin: 0;
+  margin-bottom: 23px;
   padding: 0;
 
   font-weight: 600;
@@ -406,7 +428,7 @@ button:focus {
 }
 
 .services-after-title {
-  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   font-weight: 500;
@@ -419,7 +441,7 @@ button:focus {
   color: #262626;
 }
 .services-text {
-  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   font-weight: 400;
@@ -443,7 +465,7 @@ button:focus {
 .examples-link {
   margin: 0;
   padding: 0;
-
+  text-align: center;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2;
@@ -451,10 +473,28 @@ button:focus {
   color: #bd7048;
 }
 
-/************Checklist*************/
+.examples-img {
+  display: inline-block;
+  vertical-align: middle;
+}
 
+/************Checklist*************/
+.container.checklist-container {
+  padding-top: 164px;
+  padding-bottom: 39px;
+}
+.checklist-wrapp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checklist-img-wrapp,
+.checklist-content-wrapp {
+  width: calc(100% / 2);
+}
 .checklist-title {
-  margin: 0;
+  margin-bottom: 32px;
   padding: 0;
 
   font-weight: 600;
@@ -464,7 +504,7 @@ button:focus {
 }
 
 .checklist-text {
-  margin: 0;
+  margin-bottom: 39px;
   padding: 0;
 
   font-weight: 500;
@@ -476,6 +516,37 @@ button:focus {
 
 /************Design*************/
 
+.design-list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.design-items-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.design-list + .design-list {
+  margin-bottom: 20px;
+}
+.design-title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(49 / 40);
+  text-align: center;
+  color: #262626;
+}
+.design-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+
+  color: rgba(38, 38, 38, 0.7);
+}
 .design-desc {
   margin: 0;
   padding: 0;
@@ -498,13 +569,16 @@ button:focus {
 /************Test*************/
 
 .test {
-  background-image: url(../images/section-test-jpg.jpg);
-  background-size: contain;
+  height: 489px;
+  padding-top: 118px;
+  background-image: url(../src/images/image\ 41.png);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .test-title {
-  margin: 0;
+  margin-bottom: 27px;
   padding: 0;
 
   font-weight: 600;
@@ -514,7 +588,7 @@ button:focus {
 }
 
 .test-text {
-  margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   font-weight: 500;
@@ -522,7 +596,26 @@ button:focus {
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
 }
+/************footer*************/
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.footer-nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 /************Privacy*************/
 
 .privacy-policy {
@@ -536,7 +629,10 @@ button:focus {
   line-height: 1.2;
   color: rgba(33, 33, 33, 0.5);
 }
-
+.footer-nav-link {
+  margin: 0;
+  padding: 0;
+}
 /************Copi*************/
 
 .copi {
