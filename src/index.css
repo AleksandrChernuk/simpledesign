@@ -66,7 +66,7 @@ h3 {
 
   width: 49px;
   height: 49px;
-  background-image: url(../src/images/plus-circle.svg);
+  background-image: url(/images/plus-circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -118,7 +118,7 @@ h3 {
   width: 21px;
   height: 23px;
   vertical-align: middle;
-  background-image: url(../src/images/card.svg);
+  background-image: url(/images/card.svg);
   background-size: contain;
 }
 
@@ -234,7 +234,7 @@ button:focus {
 
 .herow {
   background-color: var(--gray-backgraund-color);
-  background-image: url(../src/images/bg.svg);
+  background-image: url(/images/herow.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,7 +376,7 @@ button:focus {
   position: relative;
   width: calc(100% / 2);
   height: 626px;
-  background-image: url(./images/01\ 1.jpg);
+  background-image: url(/images/01\ 1.jpg);
 }
 .howitsworks-img-small {
   position: absolute;
@@ -571,7 +571,7 @@ button:focus {
 .test {
   height: 489px;
   padding-top: 118px;
-  background-image: url(../src/images/image\ 41.png);
+  background-image: url(/images/section-test-jpg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
