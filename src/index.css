@@ -27,7 +27,8 @@ h3 {
   font-family: inherit;
   display: inline-flex;
   align-items: center;
-  padding: 10px;
+  margin: 20px 0;
+  padding: 20px 10px;
   width: 100%;
   background: #fafafa;
   border-radius: 100px;
@@ -40,21 +41,21 @@ h3 {
 
 .accordion-items {
   position: relative;
-  height: 150px;
-  margin: 0;
-  padding: 0;
+  margin: 10px 20px;
 }
 
-.accordion-items.closed {
-  height: 80px;
+.accordion-items {
+}
+
+.accordion-items.activ .accordion-text {
+  height: auto;
 }
 .accordion-text {
-  display: block;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(34px);
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  overflow-y: auto;
+  transition: 0.5ms linear;
 }
 
 .show {
@@ -63,6 +64,7 @@ h3 {
 
 .accordion-btn::before {
   content: "";
+
   display: inline-block;
   margin-right: 12px;
   vertical-align: middle;
