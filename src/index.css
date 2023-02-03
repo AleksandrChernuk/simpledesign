@@ -93,11 +93,11 @@ h3 {
   line-height: 1.2;
 
   border: none;
-
+  opacity: 1;
   background-color: var(--primery-color);
   color: var(--primery-text-color);
   cursor: pointer;
-  transition: all linear;
+  transition: opacity 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .button-select {
@@ -124,7 +124,7 @@ h3 {
 
 button:hover,
 button:focus {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /******************************************/
@@ -221,11 +221,6 @@ button:focus {
 }
 /************HeroW*************/
 
-.herow {
-  height: 680px;
-  padding-top: 164px;
-}
-
 .container.herow-container {
   text-align: center;
   position: relative;
@@ -233,6 +228,8 @@ button:focus {
 }
 
 .herow {
+  height: 680px;
+  padding-top: 164px;
   background-color: var(--gray-backgraund-color);
   background-image: url(/images/herow.jpg);
   background-position: center;
@@ -250,9 +247,7 @@ button:focus {
   bottom: 0;
   right: 0;
   transform: translate(0%, 180%);
-
   background-color: var(--primery-text-color);
-
   border-radius: 50px;
 }
 
