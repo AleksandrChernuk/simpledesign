@@ -1,15 +1,17 @@
 :root {
   --primery-color: #bd7048;
   --primery-text-color: #262626;
+  --primery2-text-color: 38, 38, 38;
   --secondary-text-color: #000000;
   --secondary2-text-color: #3b3b3b;
   --secondary2-text-color-rgb: 59, 59, 59;
-  --gray-backgraund-color: rgba(104, 104, 104, 0.5);
-  --primery-text-color: #ffff;
+  --bg-color-herow: 104, 104, 104;
+  --primery-color-w: #ffff;
 
-  --gray2-text-color: #262626;
-  --dark-gray-color: gba(59, 59, 59, 1);
-  --dark-gray-a-color: rgba(59, 59, 59, 0.5);
+  --bigumbers-color-rgb: 189, 112, 72;
+
+  --secondary-text-colorRGB: 0, 0, 0;
+  --primery-color-w-RGB: #ffff;
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;
@@ -98,7 +100,7 @@ h3 {
   border: none;
   opacity: 1;
   background-color: var(--primery-color);
-  color: var(--primery-text-color);
+  color: var(--primery-color-w);
   cursor: pointer;
   transition: opacity 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -221,6 +223,7 @@ button:focus {
 }
 
 .header-phope-number {
+  margin-bottom: 0.125rem;
   font-family: inherit;
   font-weight: 600;
   font-size: 0.9375rem;
@@ -239,6 +242,21 @@ button:focus {
 
 .nav-aside {
   margin-left: auto;
+  position: relative;
+}
+
+.nav-aside::before {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  transform: translate(-150%, -30%);
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-image: url("../images/phone-icons.svg");
 }
 /************HeroW*************/
 
@@ -249,18 +267,21 @@ button:focus {
 }
 
 .herow {
-  height: 680px;
-  padding-top: 164px;
-  background-color: var(--gray-backgraund-color);
-  background-image: url(/images/herow.jpg);
+  height: 42.5rem;
+  padding-top: 10.25rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(var(--secondary-text-colorRGB), 0.25);
+
+  background-image: linear-gradient(0deg, rgba(var(--bg-color-herow), 0.5), rgba(var(--bg-color-herow), 0.5)),
+    url("../images/herow-baner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .herow-list {
-  width: 1176px;
+  width: 73.5rem;
   margin: 0 auto;
+  background-color: var(--primery-color-w-RGB);
 
   display: flex;
   justify-content: space-around;
@@ -268,21 +289,21 @@ button:focus {
   bottom: 0;
   right: 0;
   transform: translate(0%, 180%);
-  background-color: var(--primery-text-color);
-  border-radius: 50px;
+
+  border-radius: 3.125rem;
 }
 
 .herow-title {
-  width: 846px;
+  width: 52.875rem;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
 
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.2;
   text-align: center;
-  color: var(--primery-text-color);
+  color: var(--primery-color-w);
 }
 
 .herow-items {
@@ -290,31 +311,42 @@ button:focus {
   flex-direction: row;
   align-items: center;
 
-  width: 185px;
-  padding-top: 68px;
-  padding-bottom: 61px;
+  padding-top: 4.25rem;
+  padding-bottom: 3.8125rem;
 }
 
 .herow-items-text {
+  width: 11.5625rem;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   color: var(--gray2-text-color);
 }
 
 .herow-items-desc {
+  width: 11.5625rem;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.2;
-  color: rgba(38, 38, 38, 0.7);
+  color: rgba(var(--secondary-text-colorRGB), 0.7);
 }
 
 .herow-items-img {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
+
 .items-text-wrapp {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.herow-items-link {
+  display: block;
+  width: 4.5rem;
+  height: 1.0625rem;
+  margin-top: 0.5625rem;
+  cursor: pointer;
+  background-image: url("../images/kaspi.svg");
 }
 
 /************Howitsworks*************/
@@ -323,38 +355,37 @@ button:focus {
   display: flex;
 
   flex-direction: column;
-  gap: 73px;
+  gap: 4.5625rem;
 }
 
 .howitsworks-container {
   display: flex;
   flex-direction: row;
-
-  padding-top: 205px;
+  padding: 208px 0;
 }
 .howitsworks-content {
   width: calc(100% / 2);
 }
 
 .howitsworks-title {
-  width: 497px;
-  margin-bottom: 62px;
+  width: 31.0625rem;
+  margin-bottom: 3.875rem;
 
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.2;
-  color: #262626;
+  color: var(--primery-text-color);
 }
 
 .howitsworks-text {
-  margin: 0;
+  margin-bottom: 0.875rem;
   padding: 0;
 
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
-  color: rgba(38, 38, 38, 1);
+  color: rgba(var(--primery2-text-color), 1);
 }
 .howitsworks-after-text {
   margin: 0;
@@ -362,9 +393,9 @@ button:focus {
 
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.2;
-  color: rgba(38, 38, 38, 0.7);
+  color: rgba(var(--primery2-text-color), 0.7);
 }
 
 .howitsworks-items {
@@ -373,35 +404,42 @@ button:focus {
 
 .items-number {
   display: block;
-  width: 134px;
-  margin-bottom: 5px;
+  width: 8.375rem;
+  margin-bottom: 0.3125rem;
   text-align: left;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 85px;
+  font-size: 4.375rem;
+  line-height: 5.3125rem;
 
-  color: rgba(189, 112, 72, 0.2);
+  color: rgba(var(--bigumbers-color-rgb), 0.2);
 }
 .items-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 311px;
+  width: 19.4375rem;
 }
 .howitsworks-img {
   position: relative;
   width: calc(100% / 2);
-  height: 626px;
-  background-image: url(/images/01\ 1.jpg);
 }
 .howitsworks-img-small {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-40%, 20%);
+  transform: translate(20%, 25%);
+}
+
+.howitsworks {
+  background-image: url("../images/howitsworks-img.jpg");
+  background-repeat: no-repeat;
+
+  /* background-size: 613px 626px; */
+  background-position: 100% 63%;
 }
 /************Services*************/
-
+.services-container {
+}
 .services-inner {
   display: flex;
   flex-direction: column;
