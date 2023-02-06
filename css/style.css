@@ -1,9 +1,12 @@
 :root {
   --primery-color: #bd7048;
+  --primery-text-color: #262626;
+  --secondary-text-color: #000000;
+  --secondary2-text-color: #3b3b3b;
+  --secondary2-text-color-rgb: 59, 59, 59;
   --gray-backgraund-color: rgba(104, 104, 104, 0.5);
   --primery-text-color: #ffff;
-  --secondary-text-color: #000000;
-  --gray-text-color: #3b3b3b;
+
   --gray2-text-color: #262626;
   --dark-gray-color: gba(59, 59, 59, 1);
   --dark-gray-a-color: rgba(59, 59, 59, 0.5);
@@ -27,21 +30,21 @@ h3 {
   font-family: inherit;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 20px 10px;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 0.625rem;
   width: 100%;
   background: #fafafa;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   border: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
   color: #262626;
 }
 
 .accordion-items {
   position: relative;
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 
 .accordion-items.activ .accordion-text {
@@ -52,10 +55,10 @@ h3 {
 .accordion-text {
   overflow: hidden;
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 34px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 0.875rem;
+  padding-bottom: 2.125rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: none;
 }
 
@@ -111,6 +114,7 @@ h3 {
   align-items: center;
   color: #bd7048;
 }
+
 .button-select::before {
   content: "";
   display: inline-block;
@@ -146,9 +150,14 @@ button:focus {
 
 /*******Header***********/
 
+.flex.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.2;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -160,25 +169,24 @@ button:focus {
 
 .header-logo .header-logo-small {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1.2;
   color: var(--secondary-text-color);
 }
 
 .header-nav-list {
-  gap: 48px;
+  margin-left: 12.875rem;
+  gap: 3rem;
 }
 
 .header-nav-link {
   position: relative;
   display: block;
-  padding: 50px 0;
-  margin-left: 20px;
+  padding: 3.125rem 0;
   text-decoration: none;
-
   font-family: inherit;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.2;
   color: var(--gray-text-color);
 }
@@ -191,16 +199,16 @@ button:focus {
   transform: translate(0%, -50%);
   position: absolute;
   width: 50%;
-  height: 2px;
-  border-radius: 2px;
-  background-color: #bd7048;
+  height: 0.125rem;
+  border-radius: 0.125rem;
+  background-color: var(--primery-color);
   opacity: 0;
 
   transition: opacity 0.5s linear;
 }
 .header-nav-link:hover {
   transform: scale(1.1);
-  color: #bd7048;
+  color: var(--primery-color);
 }
 .header-nav-link:hover::after {
   opacity: 1;
@@ -215,24 +223,18 @@ button:focus {
 .header-phope-number {
   font-family: inherit;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.2;
-  color: var(--dark-gray-color);
+  color: var(--secondary2-text-color);
   text-decoration: none;
-}
-
-.flex.main-nav {
-  display: flex;
-  align-items: center;
 }
 
 .header-time {
   margin: 0;
-
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: var(--dark-gray-a-color);
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  color: rgba(var(--secondary2-text-color-rgb), 0.5);
 }
 
 .nav-aside {
