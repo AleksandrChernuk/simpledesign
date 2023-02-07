@@ -1,2 +1,4 @@
 import "./index.html";
-import "./style.css";
+import "./index.scss";
+
+import accordion from "./component/accordion";

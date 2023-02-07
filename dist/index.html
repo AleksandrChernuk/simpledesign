@@ -1,333 +1,419 @@
-<head><script defer src="main.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve './css/style.css' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './css/style.css' in '/Users/aleksandrcernuk/Desktop/si  mpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/time-outlined.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign  /src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/time-outlined.svg' in '/Users/aleksandrcernuk  /Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/check.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/check.svg' in '/Users/aleksandrcernuk/Desktop  /simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/credit.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/credit.svg' in '/Users/aleksandrcernuk/Deskto  p/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/howitsworks-img-small.png' in '/Users/aleksandrcernuk/Desktop/simp  ledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/howitsworks-img-small.png' in '/Users/aleksan  drcernuk/Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/Pdf.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/Pdf.svg' in '/Users/aleksandrcernuk/Desktop/s  impledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/plan-jpeg-02.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/  src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/plan-jpeg-02.jpg' in '/Users/aleksandrcernuk/  Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/todolist.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'  ModuleNotFoundError: Module not found: Error: Can't resolve './images/todolist.svg' in '/Users/aleksandrcernuk/Desk  top/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/aqarel-jpeg.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/s  rc'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/aqarel-jpeg.jpg' in '/Users/aleksandrcernuk/D  esktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/ira-jpeg.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'  ModuleNotFoundError: Module not found: Error: Can't resolve './images/ira-jpeg.jpg' in '/Users/aleksandrcernuk/Desk  top/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/nurs.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/nurs.jpg' in '/Users/aleksandrcernuk/Desktop/  simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/blue.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/blue.jpg' in '/Users/aleksandrcernuk/Desktop/  simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/pinck.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/pinck.jpg' in '/Users/aleksandrcernuk/Desktop  /simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/shine.jpg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/shine.jpg' in '/Users/aleksandrcernuk/Desktop  /simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/corridor-irina-jpg.jpg' in '/Users/aleksandrcernuk/Desktop/simpled  esign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/corridor-irina-jpg.jpg' in '/Users/aleksandrc  ernuk/Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/corridor-aqarel-jpg.jpg' in '/Users/aleksandrcernuk/Desktop/simple  design/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/corridor-aqarel-jpg.jpg' in '/Users/aleksandr  cernuk/Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  Module not found: Error: Can't resolve './images/corridor-cadur-jpg.jpg' in '/Users/aleksandrcernuk/Desktop/simpled  esign/src'
-  ModuleNotFoundError: Module not found: Error: Can't resolve './images/corridor-cadur-jpg.jpg' in '/Users/aleksandrc  ernuk/Desktop/simpledesign/src'
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/aleksandrcernuk/Desktop/simpledesign/node_modules/tapable/lib/HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:670:25
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:855:8
-      at /Users/aleksandrcernuk/Desktop/simpledesign/node_modules/webpack/lib/NormalModuleFactory.js:975:5
-  
-  - Compilation.js:2016 
-    [simpledesign]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - Module not found: Error: Can't resolve './images/time-outlined.svg' in '/Users/aleksandrcernuk/Desktop/simpledesi    gn/src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve './images/time-outlined.svg' in '/Users/aleksandrcern    uk/Desktop/simpledesign/src'
-  
-  - Compilation.js:2016 
-    [simpledesign]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - Module not found: Error: Can't resolve './images/check.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve './images/check.svg' in '/Users/aleksandrcernuk/Deskt    op/simpledesign/src'
-  
-  - Compilation.js:2016 
-    [simpledesign]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - Module not found: Error: Can't resolve './images/credit.svg' in '/Users/aleksandrcernuk/Desktop/simpledesign/src'  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve './images/credit.svg' in '/Users/aleksandrcernuk/Desk    top/simpledesign/src'
-  
-  - Compilation.js:2016 
-    [simpledesign]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:670 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - Module not found: Error: Can't resolve './images/howitsworks-img-small.png' in '/Users/aleksandrcernuk/Desktop/si    mpledesign/src'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve './images/howitsworks-img-small.png' in '/Users/aleks    andrcernuk/Desktop/simpledesign/src'
-  
-  - Compilation.js:2016 
-    [simpledesign]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [simpledesign]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <script defer src="main.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="container main-nav flex">
+        <nav class="header-nav flex">
+          <a href="#" lang="en" class="header-logo"
+            >Simple <span>Design</span><br /><span class="header-logo-small">дизайн интерьера</span></a
+          >
+          <ul class="header-nav-list list flex">
+            <li class="header-nav-items"><a href="#" class="header-nav-link">Главная</a></li>
+            <li class="header-nav-items"><a href="#" class="header-nav-link">Тест</a></li>
+            <li class="header-nav-items"><a href="#" class="header-nav-link">Каталог</a></li>
+            <li class="header-nav-items"><a href="#" class="header-nav-link">О нас </a></li>
+            <li class="header-nav-items"><a href="#" class="header-nav-link">Цены</a></li>
+          </ul>
+        </nav>
+        <div class="nav-aside">
+          <a href="tel:+380441111111" class="header-phope-number">+38044 1111111</a>
+          <p class="header-time">с 9:00 до 18:00</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="herow">
+        <div class="container herow-container">
+          <h1 class="herow-title">Дизайн-проект для вашей квартиры за 2 недели и 20 000 тыс грн</h1>
+          <button type="button" class="button">Консультация</button>
+          <ul class="herow-list list">
+            <li class="herow-items">
+              <!-- <img class="herow-items-img" src="./images/time-outlined.svg" alt="часы" width="44" height="44" /> -->
+              <div class="items-text-wrapp">
+                <p class="herow-items-text">2 недели</p>
+                <p class="herow-items-desc">срок выполнения заказа</p>
+              </div>
+            </li>
+            <li class="herow-items">
+              <!-- <img class="herow-items-img" src="./images/check.svg" alt="галочка" width="44" height="44" /> -->
+              <div class="items-text-wrapp">
+                <p class="herow-items-text">Не важно</p>
+                <p class="herow-items-desc">Сколько квадратов, цена - одна!</p>
+              </div>
+            </li>
+            <li class="herow-items">
+              <!-- <img class="herow-items-img" src="./images/credit.svg" alt="кошилек" width="44" height="44" /> -->
+              <div class="items-text-wrapp">
+                <p class="herow-items-text">Рассрочка</p>
+                <p class="herow-items-desc">до 24 месяцев</p>
+                <a href="#" class="herow-items-link"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="howitsworks">
+        <div class="container howitsworks-container">
+          <div class="howitsworks-content">
+            <h2 class="howitsworks-title">Как это работает?</h2>
+            <ul class="howitsworks-list list">
+              <li class="howitsworks-items">
+                <span class="items-number">01</span>
+                <div class="items-content">
+                  <p class="howitsworks-text">Выбор состава проекта</p>
+                  <p class="howitsworks-after-text">
+                    Выберите состав вашего проекта: только планировка или дизайн-проект
+                  </p>
+                </div>
+              </li>
+              <li class="howitsworks-items">
+                <span class="items-number">02</span>
+                <div class="items-content">
+                  <p class="howitsworks-text">Настройка проекта</p>
+                  <p class="howitsworks-after-text">
+                    Отметьте в корзине нужен ли вам профессиональный замер, подбор строительной бригады или точный
+                    просчет сметы
+                  </p>
+                </div>
+              </li>
+              <li class="howitsworks-items">
+                <span class="items-number">03</span>
+                <div class="items-content">
+                  <p class="howitsworks-text">Создание чертежей</p>
+                  <p class="howitsworks-after-text">Наши дизайнеры спроектируют интерьер, подготовят чертежи.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="howitsworks-img">
+            <!-- <img
+              class="howitsworks-img-small"
+              src="./images/howitsworks-img-small.png"
+              alt=""
+              width="321"
+              height="414"
+            /> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container services-container">
+          <p class="services-pre-title">Наши услуги</p>
+          <div class="services-inner">
+            <div class="services-wrapper">
+              <div class="services-wrapper-content">
+                <h2 class="services-title">Планировка за 10 000 uah</h2>
+                <p class="services-after-title">Срок выполнения: <span>5 дней</span></p>
+                <p class="services-text">
+                  Мы разработаем для вас уникальное планировочное решение квартиры, которое будет соответствовать как
+                  нормам эргономики, так и вашим личным пожеланиям, а также подготовим чертеж для согласования
+                  планировки.
+                </p>
+                <ul class="services-list">
+                  <li class="services-items">2 варианта планировки + финальный</li>
+                  <li class="services-items">обмерный план</li>
+                  <li class="services-items">план демонтажа стен</li>
+                  <li class="services-items">план монтажа перегородок</li>
+                </ul>
+
+                <div class="examples">
+                  <button type="button" class="button">Оставить заявку</button>
+                  <!-- <img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" class="examples-img" /> -->
+                  <a class="examples-link" href="#">Посмотреть пример</a>
+                </div>
+              </div>
+              <div class="services-wrapper-img"></div>
+            </div>
+
+            <div class="services-wrapper">
+              <div class="services-wrapper-img">
+                <!-- <img src="./images/plan-jpeg-02.jpg" alt="план розеток в квартире" /> -->
+              </div>
+
+              <div class="services-wrapper-content">
+                <h2 class="services-title">Дизайн-проект за 10 000 uah</h2>
+                <p class="services-after-title">Срок выполнения: <span>14 дней</span></p>
+                <p class="services-text">
+                  Разработаем планировочное решение вашей квартиры, далее на его основе мы подготовим альбом, состоящий
+                  из 12 чертежей, необходимых строителям для ремонта.
+                </p>
+                <ul class="services-list">
+                  <li class="services-items">2 варианта планировки + финальный</li>
+                  <li class="services-items">планы демонтажа и монтажа стен</li>
+                  <li class="services-items">розетки, выключатели, освещение</li>
+                  <li class="services-items">сантехника</li>
+                  <li class="services-items">план потолка</li>
+                  <li class="services-items">план пола и плинтусов</li>
+                  <li class="services-items">план дверей</li>
+                </ul>
+                <div class="examples">
+                  <button type="button" class="button button-examples">Оставить заявку</button>
+                  <!-- <img src="./images/Pdf.svg" alt="pdf-logo" width="36" height="41" class="examples-img" /> -->
+                  <a class="examples-link" href="#">Посмотреть пример</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="checklist">
+        <div class="container checklist-container">
+          <div class="checklist-wrapp">
+            <div class="checklist-img-wrapp">
+              <!-- <img
+                src="./images/todolist.svg"
+                alt="лист выполненых заданий"
+                width="379"
+                height="369"
+                class="checklist-img"
+              /> -->
+            </div>
+            <div class="checklist-content-wrapp">
+              <h2 class="checklist-title">Планируете ремонт?</h2>
+              <p class="checklist-text">Ответьте на несколько вопросов и получите бесплатный чек-лист по ремонту</p>
+              <button type="button" class="button">Получить чек-лист</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="design">
+        <div class="container design-container">
+          <h2 class="design-title">Дизайн комнат</h2>
+          <p class="design-text">
+            Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в интерьере, названиями, артикулами,
+            цветом стен и так далее.
+          </p>
+
+          <p class="design-desc">Гостиные</p>
+          <ul class="design-list list">
+            <li class="design-items">
+              <!-- <img
+                class="design-items-img"
+                src="./images/aqarel-jpeg.jpg"
+                alt="примеры робот"
+                width="363"
+                height="266"
+              /> -->
+              <div class="design-items-content">
+                <p class="design-items-text">Акварель</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img class="design-items-img" src="./images/ira-jpeg.jpg" alt="примеры робот" width="363" height="266" /> -->
+              <div class="design-items-content">
+                <p class="design-items-text">Ира</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img class="design-items-img" src="./images/nurs.jpg" alt="примеры робот" width="363" height="266" /> -->
+              <div class="design-items-content">
+                <p class="design-items-text">Нурс</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+          </ul>
+
+          <p class="design-desc">Детские</p>
+          <ul class="design-list list">
+            <li class="design-items">
+              <!-- <img class="design-items-img" src="./images/blue.jpg" alt="примеры робот" width="363" height="266" /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Синяя</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img class="design-items-img" src="./images/pinck.jpg" alt="примеры робот" width="363" height="266" /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Розовая</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img class="design-items-img" src="./images/shine.jpg" alt="примеры робот" width="363" height="266" /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Яркая</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+          </ul>
+
+          <p class="design-desc">Коридоры - прихожие</p>
+          <ul class="design-list list">
+            <li class="design-items">
+              <!-- <img
+                class="design-items-img"
+                src="./images/corridor-irina-jpg.jpg"
+                alt="примеры робот"
+                width="363"
+                height="266"
+              /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Ирина</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img
+                class="design-items-img"
+                src="./images/corridor-aqarel-jpg.jpg"
+                alt="примеры робот"
+                width="363"
+                height="266"
+              /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Акварель</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+            <li class="design-items">
+              <!-- <img
+                class="design-items-img"
+                src="./images/corridor-cadur-jpg.jpg"
+                alt="примеры робот"
+                width="363"
+                height="266"
+              /> -->
+
+              <div class="design-items-content">
+                <p class="design-items-text">Кадыр</p>
+                <button type="button" class="button-select">Выбрать</button>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="button">К каталогу комнат</a>
+        </div>
+      </section>
+
+      <section class="test">
+        <div class="container">
+          <h2 class="test-title">Давайте определим, что вам нравится</h2>
+          <p class="test-text">Пройдите короткий тест и мы покажем подходящие вам стилевые решения</p>
+          <button type="button" class="button">Пройти тест</button>
+        </div>
+      </section>
+
+      <section class="question">
+        <div class="container">
+          <h2 class="question-title">Часто задаваемые вопросы</h2>
+
+          <div class="accordion">
+            <div class="accordion-items">
+              <button type="button" class="accordion-btn">Вопрос</button>
+              <p class="accordion-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+                viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui
+                sit cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+                egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+                vulputate aliquam elementum, odio lacus.
+              </p>
+            </div>
+
+            <div class="accordion-items">
+              <button type="button" class="accordion-btn">Вопрос</button>
+              <p class="accordion-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+                viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui
+                sit cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+                egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+                vulputate aliquam elementum, odio lacus.
+              </p>
+            </div>
+
+            <div class="accordion-items">
+              <button type="button" class="accordion-btn">Вопрос</button>
+              <p class="accordion-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+                viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui
+                sit cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+                egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+                vulputate aliquam elementum, odio lacus.
+              </p>
+            </div>
+
+            <div class="accordion-items">
+              <button type="button" class="accordion-btn">Вопрос</button>
+              <p class="accordion-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+                viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui
+                sit cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+                egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+                vulputate aliquam elementum, odio lacus.
+              </p>
+            </div>
+            <div class="accordion-items">
+              <button type="button" class="accordion-btn">Вопрос</button>
+              <p class="accordion-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada nibh at ornare turpis sit lacus, in
+                viverra volutpat. Id sed quam consectetur condimentum tellus pellentesque a, convallis metus. Hac dui
+                sit cursus ac id aliquet. A convallis suspendisse in nulla risus, senectus vitae. Condimentum in aliquet
+                egestas aliquam at eu. Id bibendum iaculis netus ipsum quis amet lectus nisi mattis. Sit porttitor a
+                vulputate aliquam elementum, odio lacus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <nav class="footer-nav nav">
+            <a href="#" lang="en" class="header-logo"
+              >Simple <span>Design</span><br /><span class="header-logo-small">дизайн интерьера</span></a
+            >
+            <ul class="header-nav-list footer-nav-list list">
+              <li class="header-nav-items"><a href="#" class="header-nav-link footer-nav-link">Главная</a></li>
+              <li class="header-nav-items"><a href="#" class="header-nav-link footer-nav-link">Тест</a></li>
+              <li class="header-nav-items"><a href="#" class="header-nav-link footer-nav-link">О нас </a></li>
+              <li class="header-nav-items"><a href="#" class="header-nav-link footer-nav-link">Цены</a></li>
+            </ul>
+          </nav>
+
+          <a href="#" class="privacy-policy"
+            >Политика конфиденциальности <br />
+            Условия пользования</a
+          >
+
+          <div flex>
+            <a href="tel:+380441111111" class="header-phope-number">+38044 1111111</a>
+            <p class="header-time">с 9:00 до 18:00</p>
+          </div>
+        </div>
+      </div>
+      <p class="copi">(с) 2022. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
