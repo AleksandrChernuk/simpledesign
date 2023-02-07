@@ -1,0 +1,88 @@
+.container.herow-container {
+  text-align: center;
+  position: relative;
+  text-align: center;
+}
+
+.herow {
+  height: 42.5rem;
+  padding-top: 10.25rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(var(--secondary-text-colorRGB), 0.25);
+
+  background-image: linear-gradient(0deg, rgba($light-balck-color, 0.5), rgba($light-balck-color, 0.5)),
+    url("./images/herow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herow-list {
+  width: 73.5rem;
+  margin: 0 auto;
+  background-color: $white-color;
+
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, 180%);
+
+  border-radius: 3.125rem;
+}
+
+.herow-title {
+  width: 52.875rem;
+  margin: 0 auto;
+  margin-bottom: 2.625rem;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: $white-color;
+}
+
+.herow-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-top: 4.25rem;
+  padding-bottom: 3.8125rem;
+}
+
+.herow-items-text {
+  width: 11.5625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: $gray-color;
+}
+
+.herow-items-desc {
+  width: 11.5625rem;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.2;
+  color: rgba($gray-color, 0.7);
+}
+
+.herow-items-img {
+  margin-right: 1.5rem;
+}
+
+.items-text-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.herow-items-link {
+  display: block;
+  width: 4.5rem;
+  height: 1.0625rem;
+  margin-top: 0.5625rem;
+  cursor: pointer;
+  background-image: url("./images/kaspi.svg");
+}

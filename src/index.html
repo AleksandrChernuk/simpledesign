@@ -16,7 +16,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -44,7 +45,7 @@
       <section class="herow">
         <div class="container herow-container">
           <h1 class="herow-title">Дизайн-проект для вашей квартиры за 2 недели и 20 000 тыс грн</h1>
-          <button type="button" class="button">Консультация</button>
+          <button type="button" class="button" onclick="this.blur()">Консультация</button>
           <ul class="herow-list list">
             <li class="herow-items">
               <!-- <img class="herow-items-img" src="./images/time-outlined.svg" alt="часы" width="44" height="44" /> -->

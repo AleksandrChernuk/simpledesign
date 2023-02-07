@@ -1,1 +1,22 @@
-@import "./style/var";
+@import "./sass/basic/vars";
+@import "./sass/basic/normalize";
+@import "./sass/basic/container";
+@import "./sass/button/button";
+@import "./sass/component/_accordion";
+@import "./sass/component/header";
+@import "./sass/component/herow";
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
